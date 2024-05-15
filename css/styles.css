@@ -1,1 +1,13 @@
 @import "reset.css";
+
+@font-face {
+  font-family: YoungSerif-Regular;
+  src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Outfit-Regular;
+  src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf);
+  font-weight: 400;
+}
