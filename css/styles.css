@@ -11,3 +11,42 @@
   src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf);
   font-weight: 400;
 }
+
+@font-face {
+  font-family: Outfit-SemiBold;
+  src: url(/assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Outfit-Bold;
+  src: url(/assets/fonts/outfit/static/Outfit-Bold.ttf);
+  font-weight: 700;
+}
+
+:root {
+  --color-primary: hsl(14, 45%, 36%);
+  --color-secondary: hsl(332, 51%, 32%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-rose-white: hsl(330, 100%, 98%);
+  --color-neutral-eggshell: hsl(30, 54%, 90%);
+  --color-neutral-light-grey: hsl(30, 18%, 87%);
+  --color-neutral-wenge-brown: hsl(30, 10%, 34%);
+  --color-neutral-dark-charcoal: hsl(30, 10%, 20%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* .intro, .prep-time, .ingredients, .instructions, .nutrition {
+  
+} */
