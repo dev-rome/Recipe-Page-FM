@@ -47,6 +47,55 @@ img {
   display: block;
 }
 
-/* .intro, .prep-time, .ingredients, .instructions, .nutrition {
-  
-} */
+.recipe-content {
+  padding: 2.5rem 2rem;
+}
+
+h1 {
+  font-family: YoungSerif-Regular, serif;
+  font-size: 2.25rem;
+  line-height: 100%;
+  color: var(--color-neutral-dark-charcoal);
+}
+
+h2 {
+  font-family: YoungSerif-Regular, serif;
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-family: Outfit-Regular, sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--color-neutral-wenge-brown);
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+.intro > h1 {
+  margin-bottom: 1.5rem;
+}
+
+.intro > p {
+  margin-bottom: 2rem;
+}
+
+.prep-time {
+  background-color: var(--color-neutral-rose-white);
+  padding: 1.5rem;
+}
+
+.prep-time > p {
+  font-size: 1.25rem;
+  font-family: Outfit-SemiBold, sans-serif;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
