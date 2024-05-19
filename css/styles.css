@@ -49,25 +49,32 @@ p {
   color: var(--color-neutral-wenge-brown);
 }
 
-ul li {
-  list-style-type: disc;
+ul {
+  list-style: disc;
+  padding-left: 0.5rem;
 }
 
-ul li {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  margin-bottom: 0.5rem;
+ul li,
+ol li {
+  margin: 0 0 0.5rem 1.5rem;
 }
 
-ul li::before {
-  content: "•";
+ul li::marker,
+ol li::marker {
   color: var(--color-primary);
 }
 
+ul li p,
+ol li p {
+  margin-left: 1rem;
+}
+
 ol li {
-  list-style-type: decimal;
+  list-style: decimal;
+}
+
+ol li::marker {
+  font-family: Outfit-Bold, sans-serif;
 }
 
 span {
@@ -92,6 +99,7 @@ hr {
   background-color: var(--color-neutral-rose-white);
   padding: 1.5rem;
   margin-bottom: 2rem;
+  border-radius: 12px;
 }
 
 .prep-time > p {
@@ -99,12 +107,4 @@ hr {
   font-family: Outfit-SemiBold, sans-serif;
   color: var(--color-secondary);
   margin-bottom: 1rem;
-}
-
-.prep-time > ul > li {
-  margin-left: 0.5rem;
-}
-
-.prep-time > ul > li > p {
-  margin-left: 0.3rem;
 }
