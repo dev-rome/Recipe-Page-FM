@@ -1,28 +1,5 @@
 @import "reset.css";
-
-@font-face {
-  font-family: YoungSerif-Regular;
-  src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Outfit-Regular;
-  src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Outfit-SemiBold;
-  src: url(/assets/fonts/outfit/static/Outfit-SemiBold.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: Outfit-Bold;
-  src: url(/assets/fonts/outfit/static/Outfit-Bold.ttf);
-  font-weight: 700;
-}
+@import "fonts.css";
 
 :root {
   --color-primary: hsl(14, 45%, 36%);
@@ -76,8 +53,16 @@ ul li {
   list-style-type: disc;
 }
 
+ul li::marker {
+  color: var(--color-primary);
+}
+
 ol li {
   list-style-type: decimal;
+}
+
+span {
+  font-family: Outfit-SemiBold, sans-serif;
 }
 
 .intro > h1 {
@@ -98,4 +83,12 @@ ol li {
   font-family: Outfit-SemiBold, sans-serif;
   color: var(--color-secondary);
   margin-bottom: 1rem;
+}
+
+.prep-time > ul > li {
+  margin-left: 1.5rem;
+}
+
+.prep-time > ul > li > P {
+  margin-left: 1rem;
 }
