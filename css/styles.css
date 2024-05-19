@@ -65,6 +65,13 @@ span {
   font-family: Outfit-SemiBold, sans-serif;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid var(--color-neutral-light-grey);
+  margin: 2rem 0;
+
+}
+
 .intro > h1 {
   margin-bottom: 1.5rem;
 }
