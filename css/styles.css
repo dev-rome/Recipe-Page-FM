@@ -53,7 +53,16 @@ ul li {
   list-style-type: disc;
 }
 
-ul li::marker {
+ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+ul li::before {
+  content: "•";
   color: var(--color-primary);
 }
 
@@ -69,7 +78,6 @@ hr {
   border: 0;
   border-top: 1px solid var(--color-neutral-light-grey);
   margin: 2rem 0;
-
 }
 
 .intro > h1 {
@@ -83,6 +91,7 @@ hr {
 .prep-time {
   background-color: var(--color-neutral-rose-white);
   padding: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .prep-time > p {
@@ -93,9 +102,9 @@ hr {
 }
 
 .prep-time > ul > li {
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
 }
 
-.prep-time > ul > li > P {
-  margin-left: 1rem;
+.prep-time > ul > li > p {
+  margin-left: 0.3rem;
 }
