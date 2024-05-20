@@ -51,7 +51,6 @@ p {
 
 ul {
   list-style: disc;
-  padding-left: 0.5rem;
 }
 
 ul li,
@@ -133,4 +132,41 @@ tr td:nth-of-type(1) {
 tr td:nth-child(2) {
   font-family: Outfit-Bold, sans-serif;
   color: var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: var(--color-neutral-eggshell);
+  }
+
+  article {
+    padding: 2rem 1rem;
+  }
+
+  .recipe-container {
+    max-width: 736px;
+    margin: 0 auto;
+    background-color: var(--color-neutral-white);
+    border-radius: 24px;
+  }
+
+  figure {
+    padding: 2.5rem 2.5rem 0 2.5rem;
+  }
+
+  img {
+    border-radius: 12px;
+  }
+
+  .recipe-content {
+    padding: 2.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
 }
